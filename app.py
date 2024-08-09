@@ -5,7 +5,6 @@ import smtplib
 import pandas as pd
 from supabase import create_client, Client
 from datetime import datetime
-from streamlit_modal import Modal
 # Data -------------------------------------------------------------------------------------------
 @st.cache_resource
 def init_connection():
