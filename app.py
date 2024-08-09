@@ -8,8 +8,8 @@ from datetime import datetime
 # Data -------------------------------------------------------------------------------------------
 @st.cache_resource
 def init_connection():
-    url: str = st.secrets['supabase_url']
-    key: str = st.secrets['supabase_key']
+    url: str = st.secrets['supabase']['supabase_url']
+    key: str = st.secrets['supabase']['supabase_key']
     client: Client = create_client(url,key)
     return client
 
