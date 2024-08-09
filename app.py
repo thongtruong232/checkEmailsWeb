@@ -85,7 +85,6 @@ if __name__ == "__main__":
     df['Date'] = now.strftime('%Y-%m-%d %H:%M:%S')
     csv = df.to_csv(index=False)
     if btn:
-        liveMails()
         if mails:
             lines = mails.split('\n')
             for i, line in enumerate(lines, start=1):
